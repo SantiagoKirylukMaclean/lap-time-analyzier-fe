@@ -1,0 +1,167 @@
+/* General styles */
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #ff4b4b;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: #ff4b4b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ffffff;
+  }
+  
+  /* Header styles */
+  .app-header {
+    background-color: #333333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ol li {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  
+  nav ol li a {
+    color: #ff4b4b;
+    transition: color 0.3s ease;
+  }
+  
+  nav ol li a:hover {
+    color: #ffffff;
+  }
+  
+  /* Dropzone styles */
+  .dropzone {
+    background-color: #2e2e2e;
+    border: 2px dashed #ff4b4b;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dropzone p {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .dropzone:hover {
+    background-color: #3e3e3e;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid #444444;
+    padding: 12px 15px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ff4b4b;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  td {
+    background-color: #2e2e2e;
+    color: #ffffff;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #3e3e3e;
+  }
+  
+  /* Form and select styles */
+  select {
+    background-color: #2e2e2e;
+    color: #ffffff;
+    border: 1px solid #444444;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  select:focus {
+    background-color: #3e3e3e;
+    outline: none;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #ff4b4b;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: #ff4b4b;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .app-header {
+      flex-direction: column;
+    }
+  
+    nav ol {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ol li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  
+    table, th, td {
+      font-size: 14px;
+    }
+  }
+  

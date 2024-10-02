@@ -1,0 +1,58 @@
+/* Estilos para el Header */
+.app-header {
+    background-color: #333333; /* Fondo oscuro para el header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar efecto de elevación */
+  }
+  
+  .logo {
+    height: 40px; /* Tamaño del logo */
+    width: auto;
+  }
+  
+  /* Estilos para la navegación */
+  nav ol {
+    list-style-type: none; /* Eliminar las viñetas predeterminadas */
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ol li {
+    margin-left: 20px; /* Separación entre los enlaces del menú */
+    font-size: 18px; /* Tamaño de fuente legible */
+  }
+  
+  /* Enlaces del menú */
+  nav ol li a {
+    color: #ff4b4b; /* Color rojo para los enlaces */
+    text-decoration: none; /* Eliminar el subrayado predeterminado */
+    transition: color 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  /* Cambiar el color al pasar el mouse */
+  nav ol li a:hover {
+    color: #ffffff; /* Color blanco al hacer hover */
+  }
+  
+  /* Responsive adjustments para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .app-header {
+      flex-direction: column; /* Ajustar la dirección a columna en pantallas pequeñas */
+      align-items: flex-start;
+    }
+  
+    nav ol {
+      flex-direction: column; /* Alinear verticalmente los enlaces */
+      align-items: flex-start;
+    }
+  
+    nav ol li {
+      margin-left: 0;
+      margin-bottom: 10px; /* Separar verticalmente los enlaces en pantallas pequeñas */
+    }
+  }
+  
